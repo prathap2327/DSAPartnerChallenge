@@ -1,0 +1,15 @@
+package Day4_Coding;
+
+public class Fibonacci {
+    public static void main(String[] args) {
+        int n = 10; // Number of Fibonacci numbers to generate
+        int a = 0, b = 1;
+        System.out.printf("Fibonacci series up to %d terms:%n", n);
+        for (int i = 1; i <= n; i++) {
+            System.out.printf("%d ", a);
+            int next = a + b;
+            a = b;
+            b = next;
+        }
+    }
+}
